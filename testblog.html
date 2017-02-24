@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>一小荒</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/testblog.css">
+<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">-->
+<script src="http://libs.baidu.com/jquery/1.8.2/jquery.js" type="text/javascript"></script> 
+<style>
+
+</style>
+</head>
+<body>
+<script>
+$(function(){
+    
+    $("#nav").bind('click',function(){
+        $("#menu").animate({'right':'0'},2000);
+        // $(document).scrollTop(a);//不用加px单位。。为什么设置了还是没用？？
+        
+    });
+    $("#closeme").bind('click',function(){
+        $("#menu").animate({'right':'-320px'},2000);
+
+    })
+    $("#learnmore").bind('click',function(){
+        var a=$("#banner").scrollTop()+10;
+        $("#banner").scrollTop(a);
+        // $(document).scrollTop(a);
+    })
+})
+
+</script>
+<script>
+
+</script>
+
+<div id="content">
+    <header id="header">
+         
+     </header>
+     <nav id="nav">
+        <a href="#"><h1>MENU</h1></a> 
+    </nav>
+     <div id="menu">
+     <span id="closeme">close</span>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SKILLS</a></li>
+            <li><a href="#">NOTES</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+     </div>
+     <section id="banner">
+         <div class="home">
+             <h2>HUANG</h2>
+             <p>MADE UP BY LOVELY HUANG</p>
+             <button class="buttonred" value="求包养">求包养</button>
+             <a href="#" id="learnmore" onclick="rollUp()"><p>LEARN MORE</p></a>
+         </div>
+     </section>
+     <section id="one">
+        <div class="text"><h2>ARCU ALIQUET VEL LOBORTIS ATA NISLE</h2>
+<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+            
+        </div>
+        <div class="iconbox">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+        </div>
+
+     </section>
+     <section id="two">
+        <section>
+            <div class="twopics"><img src="images/pic01.jpg" alt=""></div>
+            <div class="twotext">
+                <h2>MAGNA PRIMIS LOBORTIS SED ULLAMCORPER</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+            </div>
+        </section>
+        <section>
+            
+            <div class="twotext">
+                <h2>MAGNA PRIMIS LOBORTIS SED ULLAMCORPER</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+            </div>
+            <div class="twopics"><img src="images/pic02.jpg" alt=""></div>
+        </section>
+        <section>
+            <div class="twopics"><img src="images/pic03.jpg" alt=""></div>
+            <div class="twotext">
+                <h2>MAGNA PRIMIS LOBORTIS SED ULLAMCORPER</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+            </div>
+        </section>
+     </section>
+     <section id="three">
+         <div class="text">
+             <h2>ACCUMSAN MUS TORTOR NUNC ALIQUET</h2>
+             <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper</p>
+        </div>
+         <ul>
+             <li>
+                 <h3>ARCU ACCUMSAN</h3>
+                 <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+             </li>
+             <li>
+                 <h3>ARCU ACCUMSAN</h3>
+                 <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+             </li>
+             <li>
+                 <h3>ARCU ACCUMSAN</h3>
+                 <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+             </li>
+             <li>
+                 <h3>ARCU ACCUMSAN</h3>
+                 <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+             </li>
+             <li>
+                 <h3>ARCU ACCUMSAN</h3>
+                 <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+             </li>
+             <li>
+                 <h3>ARCU ACCUMSAN</h3>
+                 <p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+             </li>
+         </ul>
+         
+     </section>
+     <section id="contact">
+         <div class="contact">
+             <h2>HUANG</h2>
+             <p>MADE UP BY LOVELY HUANG</p>
+             <button class="buttonred" value="求包养">求包养</button>
+             <button class="buttonwhite" value="求包养">求包养</button>
+         </div>
+     </section>
+     <footer id="footer">
+        <ul>
+            <li><a href="#"><a href="">1</a></a></li>
+            <li><a href="#"><a href="">2</a></a></li>
+            <li><a href="#"><a href="">3</a></a></li>
+            <li><a href="#"><a href="">4</a></a></li>
+            <li><a href="#"><a href="">5</a></a></li>
+        </ul>
+        <ul>
+            <li><a href="#"><a href="">1</a></a></li>
+            <li><a href="#"><a href="">2</a></a></li>
+            <li><a href="#"><a href="">3</a></a></li>
+            <li><a href="#"><a href="">4</a></a></li>
+            <li><a href="#"><a href="">5</a></a></li>
+            <li><a href="#"><a href="">1</a></a></li>
+            <li><a href="#"><a href="">2</a></a></li>
+            <li><a href="#"><a href="">3</a></a></li>
+            <li><a href="#"><a href="">4</a></a></li>
+            <li><a href="#"><a href="">5</a></a></li>
+        </ul>
+
+
+         
+     </footer>     
+</div>
+    
+
+
+
+    <script>
+
+       
+    </script>
+</body>
